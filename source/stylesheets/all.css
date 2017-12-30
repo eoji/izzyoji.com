@@ -21,15 +21,15 @@
     color:black;
 }
 
-
 /*
  * -- SPLASH STYLES --
  */
 
 .splash-container {
-    background: url("../images/bg.jpg")  no-repeat;
-    background-size: 100% auto;
-    background-position: center;
+    background: url("../images/izzyoji.jpg")  no-repeat;
+    background-size: 50% auto;
+    background-color: #D3D3D3;
+    background-position: right;
     z-index: 1;
     overflow: hidden;
     /* The following styles are required for the "scroll-over" effect */
@@ -43,19 +43,18 @@
 .splash {
     /* absolute center .splash within .splash-container */
     width: 100%;
-    height: 100%;
+    height: 40%;
     position: absolute;
-    margin: auto;
-    top: 12em; left: 0; bottom: 0; right: 0;
-    text-align: center;
-    color:white;
+    margin:auto;
+    top: 0em; left: 1.5em; bottom: 0; right: 0;
+    text-align: left;
+    color: black;
 }
 
-/* This is the main heading that appears on the blue section */
+/* This is the main heading that appears on the overscroll section */
 .splash-head {
-    font-family: 'Over the Rainbow', cursive;
-    color: white;
-    line-height: .5em;
+    font-weight: bold;
+    font-family: 'Roboto Mono', monospace;
 }
 
 .splash-subhead {
@@ -68,12 +67,12 @@
 
 /*
  * -- CONTENT STYLES --
- * This represents the content area (everything below the blue section)
+ * This represents the content area (everything below the overscroll section)
  */
 .content-wrapper {
     /* These styles are required for the "scroll-over" effect */
     position: absolute;
-    top: 87%;
+    top: 93.5%;
     width: 100%;
     min-height: 12%;
     z-index: 2;
@@ -85,11 +84,14 @@
     font-weight: 600;
     font-size:5em;
     margin: 2em 0 1em;
+    padding-left: .25em;
+    text-align: left;
 }
 
 .content p {
     font-size: 1.5em;
-    padding: 1em;
+    padding: .5em;
+    text-align: left;
 }
 
 a:link {
@@ -99,8 +101,22 @@ a:link {
 a img {
     height: 40px;
     width: 40px;
-    padding-left: .7em;
-    padding-right: .7em;
+    padding-top: .5em;
+    padding-right: .58em;
+}
+
+/*
+ * -- DESKTOP (AND UP) MEDIA QUERIES --
+ */
+@media (min-width: 78em) {
+    /* We increase the header font size even more */
+    .splash-head {
+        font-size: 6em;
+    }
+
+    .splash-subhead {
+        font-size: 3em;
+    }
 }
 
 /*
@@ -132,9 +148,8 @@ a img {
     }
 
     .splash-subhead {
-        font-size: 2.5em;
+        font-size: 2.25em;
     }
-
 
     /* We remove the border-separator assigned to .l-box-lrg */
     .l-box-lrg {
@@ -144,22 +159,8 @@ a img {
     .content-head {
         font-size:3em;
     }
-
 }
 
-/*
- * -- DESKTOP (AND UP) MEDIA QUERIES --
- */
-@media (min-width: 78em) {
-    /* We increase the header font size even more */
-    .splash-head {
-        font-size: 6em;
-    }
-
-    .splash-subhead {
-        font-size: 3em;
-    }
-}
 
 /*
  * -- SMALLER THAN TABLETS MEDIA QUERIES --
@@ -178,7 +179,8 @@ a img {
     }
 
     .splash {
-        height: 50%;
+        height: 25%;
+        top: 0em; left: .75em; bottom: 0; right: 0;
     }
 
     .content-head {
@@ -188,6 +190,6 @@ a img {
 
 
 .l-box {
-    padding: 1em;
+    padding: 2em;
     padding-top: 5em;
 }
