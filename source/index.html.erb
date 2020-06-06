@@ -7,6 +7,7 @@ title: Izzy Oji
 
         <ul class="pure-menu-list">
             <li class="pure-menu-item"><a href="#about" class="pure-menu-link">Who❓</a></li>
+            <li class="pure-menu-item"><a href="#links" class="pure-menu-link">Faves ⭐️</a></li>
             <li class="pure-menu-item"><a href="#contact" class="pure-menu-link">Contact 📨</a></li>
         </ul>
     </div>
@@ -19,7 +20,8 @@ title: Izzy Oji
       Hi, I'm Izzy.<br>
       I love to write code!<br>
       When I'm not coding, I'm working out,<br>
-      cooking, or painting my nails.
+      cooking, painting my nails, guitarring,<br>
+      or sending handmade cards.
       </span>
     </h3>
   </div>
@@ -27,26 +29,40 @@ title: Izzy Oji
   <!-- shoving the about id here because the nav bar covers it on mobile -->
 <div class="content-wrapper" id="about">
     <div class="content" >
-        <h2 class="content-head">WHO IS SHE? 🗣</h2>
+        <h2 class="content-head">WHOMST ⁉️</h2>
 
         <div>
           <p>I’m a Staff Android Engineer based in Brooklyn, NY.<br><br>
 
-            I currently work at <%= link_to 'Kickstarter', 'https://www.kickstarter.com/team' %>. You can look at <%= link_to 'some pull requests I\'ve opened', 'https://github.com/kickstarter/android-oss/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aeoji+' %> in our Android open source repo.<br><br>
+            I currently work at <%= link_to 'eBay', 'https://play.google.com/store/apps/details?id=com.ebay.mobile&hl=en_US' %>.<br><br>
 
-            Some projects I've contributed to include: <%= link_to 'LinkNYC', 'http://link.nyc' %>, <%= link_to 'Quartz', 'https://play.google.com/store/apps/details?id=com.qz.android&hl=en' %>, <%= link_to '1 Second Everyday', 'https://play.google.com/store/apps/details?id=co.touchlab.android.onesecondeveryday&hl=en' %>, and <%= link_to 'Betterment', 'https://play.google.com/store/apps/details?id=com.betterment&hl=en' %>.</p>
+            Some projects I've contributed to include: <%= link_to 'Kickstarter\'s OSS Android app', 'https://github.com/kickstarter/android-oss/pulls?utf8=%E2%9C%93&q=is%3Apr+author%3Aeoji+'%>, <%= link_to 'LinkNYC', 'http://link.nyc' %>, <%= link_to '1 Second Everyday', 'https://play.google.com/store/apps/details?id=co.onese.android&hl=en_US' %>, and <%= link_to 'Betterment', 'https://play.google.com/store/apps/details?id=com.betterment&hl=en' %>.</p>
         </div>
     </div>
 
+    <div class="content" id="links">
+      <h2 class="content-head">Organizations I ❤️</h2>
+
+      <div>
+        <p>Give your money and time to: <br>
+          📚   <%= link_to 'Behind the Book', 'https://www.behindthebook.org/' %> <br>
+          📖   <%= link_to 'Bitch Media', 'https://www.bitchmedia.org/' %> <br>
+          👩🏾‍💻   <%= link_to 'Black Girls Code', 'https://www.blackgirlscode.com/' %> <br>
+          🆓   <%= link_to 'Brooklyn Community Bail Fund', 'https://brooklynbailfund.org/' %> <br>
+          🌈   <%= link_to 'Brooklyn Community Pride Center', 'https://lgbtbrooklyn.org/' %> <br>
+          🥘   <%= link_to 'The Campaign Against Hunger', 'https://www.tcahnyc.org/' %> <br>
+          💧   <%= link_to 'The Human Utility', 'https://detroitwaterproject.org/' %> <br>
+          🥘   <%= link_to 'The Okra Project', 'https://www.theokraproject.com/' %> <br>
+        </p>
+      </div>
+    </div>
+
     <div class="content" id="contact">
-      <h2 class="content-head">Say hello. 👋🏾</h2>
+      <h2 class="content-head">Say hello 👋🏾</h2>
 
       <div>
         <p>You can reach me directly by sending an email <%= link_to 'here', 'mailto:izzyoji@gmail.com' %>.<br><br>
-          <!-- icons from: https://dribbble.com/shots/2235197-50-Free-Flat-Icons-Sketch-Illustrator -->
           Sometimes I tweet from @<%= link_to 'izzyoji', 'https://www.twitter.com/izzyoji' %> but I'm probably hanging out on <%= link_to 'Github', 'https://www.github.com/eoji' %>.<br>
-          <% link_to 'https://twitter.com/izzyoji' do %><%= image_tag './images/twitter.svg'%><% end %>
-          <% link_to 'https://github.com/eoji' do %><%= image_tag './images/github.svg' %><% end %>
         </p>
       </div>
     </div>
