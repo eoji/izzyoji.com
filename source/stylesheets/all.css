@@ -6,10 +6,9 @@
     padding: 0.5em;
     text-align: center;
     box-shadow: 0 1px 1px rgba(0,0,0, 0.10);
-}
-
-.home-menu {
     background: white;
+    overflow: auto;
+    white-space: nowrap;
 }
 
 .pure-menu-heading {
@@ -85,6 +84,7 @@
     font-size:5em;
     margin: 2em 0 1em;
     padding-left: .25em;
+    padding-top: 1.75em;
     text-align: left;
 }
 
